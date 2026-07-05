@@ -11,6 +11,19 @@
 
   if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
+  /* ---------- keep the menu reveal circle centered on the burger icon itself ---------- */
+  var burgerIcon = navToggle.querySelector('.burger');
+  function updateMenuOrigin(){
+    var r = (burgerIcon || navToggle).getBoundingClientRect();
+    var ox = r.left + r.width / 2;
+    var oy = r.top + r.height / 2;
+    document.documentElement.style.setProperty('--menu-ox', ox + 'px');
+    document.documentElement.style.setProperty('--menu-oy', oy + 'px');
+  }
+  updateMenuOrigin();
+  window.addEventListener('resize', updateMenuOrigin);
+  window.addEventListener('scroll', updateMenuOrigin, { passive: true });
+
   /* ---------- header scroll state ---------- */
   function onScroll(){
     if (window.scrollY > 40) header.classList.add('is-scrolled');
@@ -94,5 +107,4 @@
     })();
   }
 
-})
-();
+})();
