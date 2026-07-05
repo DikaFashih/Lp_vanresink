@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa Van Resink — A Living Retreat on the Slopes of Merapi</title>
+<meta name="description" content="Villa Van Resink is a hand-built retreat in Kaliurang, on the southern slopes of Mount Merapi — bamboo and volcanic stone houses set among pine forest, spring water, and cool mountain air.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,500&family=Libre+Baskerville:ital@0;1&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= PATH RAIL (signature scroll element) ============================= -->
+<div class="path-rail" aria-hidden="true">
+  <svg viewBox="0 0 2 100" preserveAspectRatio="none">
+    <path class="track" d="M1,0 L1,100" vector-effect="non-scaling-stroke"/>
+    <path class="fill" id="pathFill" d="M1,0 L1,100" vector-effect="non-scaling-stroke" pathLength="1"/>
+  </svg>
+</div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header" id="siteHeader">
+  <a href="#top" class="brand">Van Resink<span>Kaliurang · Merapi</span></a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="overlayMenu">
+    <span id="navLabel">Menu</span>
+    <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+  </button>
+</header>
+
+<!-- ============================= OVERLAY MENU ============================= -->
+<div class="overlay-menu" id="overlayMenu">
+  <div class="menu-grid">
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#invitation"><span class="menu-index">01</span>The Invitation</a></li>
+        <li><a href="#explore"><span class="menu-index">02</span>Explore</a></li>
+        <li><a href="#stay"><span class="menu-index">03</span>Stay</a></li>
+        <li><a href="#nature"><span class="menu-index">04</span>Living with Merapi</a></li>
+        <li><a href="#events"><span class="menu-index">05</span>Events &amp; Retreats</a></li>
+        <li><a href="#about"><span class="menu-index">06</span>About Us</a></li>
+        <li><a href="#whats-on"><span class="menu-index">07</span>What's On</a></li>
+        <li><a href="#booking"><span class="menu-index">08</span>Reserve</a></li>
+      </ul>
+    </nav>
+    <div class="overlay-side">
+      <span class="side-title">Find us</span>
+      Kaliurang Barat, Sleman<br>Yogyakarta, Jawa Tengah
+      <br><br>
+      <span class="side-title">Reach us</span>
+      <a href="https://wa.me/6281234567890">WhatsApp Reservations</a><br>
+      <a href="mailto:stay@vanresink.com">stay@vanresink.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="top">
+  <div class="hero-scene" aria-hidden="true">
+    <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E9DFC6"/>
+          <stop offset="100%" stop-color="#D6C6A2"/>
+        </linearGradient>
+        <linearGradient id="farGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#AFA484"/>
+          <stop offset="100%" stop-color="#9A8F6E"/>
+        </linearGradient>
+        <linearGradient id="midGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#6E7A55"/>
+          <stop offset="100%" stop-color="#57613F"/>
+        </linearGradient>
+        <linearGradient id="nearGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#414F31"/>
+          <stop offset="100%" stop-color="#2E3A22"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1600" height="900" fill="url(#skyGrad)"/>
+      <!-- Merapi cone, far -->
+      <path d="M0,430 L560,80 L640,150 L760,60 L1600,420 L1600,900 L0,900 Z" fill="url(#farGrad)" opacity="0.55"/>
+      <!-- faint smoke plume -->
+      <path d="M700,72 C716,50 706,30 690,18 C712,26 726,10 716,-6" stroke="#EFE7D2" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round" class="plume"/>
+      <!-- mid ridge -->
+      <path d="M0,560 L340,340 L520,430 L780,300 L1000,420 L1300,330 L1600,500 L1600,900 L0,900 Z" fill="url(#midGrad)" opacity="0.85"/>
+      <!-- pine treeline silhouettes -->
+      <g fill="#3A4529" opacity="0.9">
+        <path d="M120,560 L145,505 L170,560 Z"/>
+        <path d="M160,560 L185,495 L210,560 Z"/>
+        <path d="M205,560 L225,515 L245,560 Z"/>
+        <path d="M980,540 L1005,480 L1030,540 Z"/>
+        <path d="M1020,540 L1045,470 L1070,540 Z"/>
+        <path d="M1065,540 L1085,495 L1105,540 Z"/>
+        <path d="M1350,510 L1375,450 L1400,510 Z"/>
+        <path d="M1390,510 L1415,440 L1440,510 Z"/>
+      </g>
+      <!-- near ridge -->
+      <path d="M0,680 L260,540 L480,650 L700,560 L950,660 L1230,560 L1600,660 L1600,900 L0,900 Z" fill="url(#nearGrad)"/>
+      <rect x="0" y="820" width="1600" height="80" fill="#2A2F1F"/>
+    </svg>
+  </div>
+  <div class="mist-layer" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">A living retreat &middot; Kaliurang, Central Java</p>
+    <h1>Slow mornings on the <em>slopes of Merapi</em></h1>
+    <div class="hero-sub">
+      <p class="hero-lede reveal">Van Resink is a small handbuilt villa woven into pine forest and volcanic stone — cool air, spring water, and houses raised with the same patience as the mountain above them.</p>
+      <div class="hero-meta">
+        900m above sea level
+        <strong>6 houses · private forest</strong>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ============================= INVITATION ============================= -->
+<section class="invitation" id="invitation">
+  <div class="wrap">
+    <blockquote class="reveal">
+      We didn't want to build a hotel on the mountain. We wanted to build something the mountain would keep.
+      <footer>— The Van Resink family</footer>
+    </blockquote>
+    <div class="invite-body reveal">
+      <p class="eyebrow">The Invitation</p>
+      <p>Three generations ago, our family planted pine along this ridge above Kaliurang, where the air drops ten degrees the moment you leave the city behind. Van Resink is what grew from that planting — six houses set apart from one another by forest and footpath, built by hand from bamboo, volcanic andesite, and reclaimed teak.</p>
+      <p>There is no lobby to check into. A path leads you in from the road, past the spring, under the pines, to a house that is already yours for the night. We would love for you to walk it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EXPLORE ============================= -->
+<section class="explore" id="explore">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Explore</p>
+        <h2>A ravine, a spring, and six hectares of pine</h2>
+      </div>
+      <p class="section-note">We designed Van Resink so you'd notice the mountain with all five senses, not just the view.</p>
+    </div>
+
+    <div class="explore-lede reveal">
+      <p>The property sits on a fold of land where the pine forest breaks open into a small ravine — Kali Kuning runs along the bottom of it, cold and clear straight off the volcano. Wild ginger and andaliman grow along the banks. Kingfishers work the shallows in the early morning, and the mist doesn't fully lift until well past nine.</p>
+      <p>Paths are uneven on purpose — hand-cut stone steps, a bamboo bridge that gives slightly underfoot, a stretch of boardwalk raised over the wettest ground. Nothing here is paved flat. There's always a reason to look down at what you're walking on, and up at what's growing over it.</p>
+    </div>
+
+    <div class="explore-grid">
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M12 3C8 9 5 12 5 16a7 7 0 0014 0c0-4-3-7-7-13z"/></svg></div>
+        <h3>The Spring Pool</h3>
+        <p>A cold-water pool fed directly from the mountain spring, tucked into the ravine beside the river. No chlorine, no chemicals — just filtered volcanic stone and gravity.</p>
+      </article>
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M4 15c2-4 4-4 6 0s4 4 6 0 4-4 4-4M4 9c2-4 4-4 6 0s4 4 6 0 4-4 4-4"/></svg></div>
+        <h3>Massage &amp; Herbal Healing</h3>
+        <p>Traditional Javanese lulur and steam treatments, given in an open-sided pavilion by therapists from the village below, using leaves gathered that same morning.</p>
+      </article>
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M12 3C9 6 9 9 12 12c3-3 3-6 0-9zM12 12c-4 1-6 4-6 8h12c0-4-2-7-6-8z"/></svg></div>
+        <h3>Yoga Pavilion</h3>
+        <p>An open-air bamboo shala cantilevered over the irrigation channel, used for morning yoga, sound baths, and quiet mornings when nobody wants to talk yet.</p>
+      </article>
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0110-1 5 5 0 0110 1c0 4.5-4 8-8 11z"/></svg></div>
+        <h3>Forest &amp; Clean-Up Walks</h3>
+        <p>A guided walk along the ravine to spot hornbills and macaques, with an optional detour: arm yourself with a bamboo spear and help us clear litter from the trailhead.</p>
+      </article>
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M12 2v6M8 5l4 3 4-3M4 13c0 5 3.5 8 8 8s8-3 8-8"/></svg></div>
+        <h3>Garden &amp; Harvest Mornings</h3>
+        <p>Volcanic soil is poor but generous — chayote, kale, and andaliman all come from our own terraces. Join the morning harvest before it reaches your breakfast plate.</p>
+      </article>
+      <article class="explore-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M4 20L20 4M14 4h6v6M4 14v6h6"/></svg></div>
+        <h3>Bamboo &amp; Timber Craft Tour</h3>
+        <p>Visit the workshop of the three carpentry families who built every house on this slope, and see how a single bamboo culm becomes a roof beam.</p>
+      </article>
+    </div>
+
+    <div class="stay-footer reveal">
+      <p>Not staying the night? A day pass includes garden and spring pool access, lunch, and a forest walk with one of our guides.</p>
+      <a href="#whats-on" class="btn btn-clay">See the day pass</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= THE PATH — sensory list ============================= -->
+<section class="path-section" id="path">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">The Path In</p>
+        <h2>What you'll notice before you notice you've arrived</h2>
+      </div>
+      <p class="section-note">Every guest walks the same short route from the gate. It is designed to slow you down on purpose.</p>
+    </div>
+    <div class="path-list reveal">
+      <div class="path-item"><span class="num">i.</span><p><strong>The gate of pine</strong> — the road noise falls away first, then the heat.</p></div>
+      <div class="path-item"><span class="num">ii.</span><p><strong>The spring channel</strong> — cold mountain water, running beside the path in a hand-cut stone gutter.</p></div>
+      <div class="path-item"><span class="num">iii.</span><p><strong>The bamboo bridge</strong> — a short crossing over the ravine, built to flex, not to hide it.</p></div>
+      <div class="path-item"><span class="num">iv.</span><p><strong>The kitchen garden</strong> — chayote, kale, and andaliman brushing your ankles as you pass.</p></div>
+      <div class="path-item"><span class="num">v.</span><p><strong>The clearing</strong> — where the pines open and Merapi appears, usually capped in cloud.</p></div>
+      <div class="path-item"><span class="num">vi.</span><p><strong>Your house</strong> — door already unlatched, lamp already lit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STAY ============================= -->
+<section class="stay" id="stay">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Stay</p>
+        <h2>Six houses, no two alike</h2>
+      </div>
+      <p class="section-note">Each house takes its name from something growing on the property — and its shape from the ground it sits on.</p>
+    </div>
+
+    <div class="house-grid">
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#DCCFA8"/><rect y="300" width="400" height="200" fill="#B7A87C"/><path d="M40,300 L200,190 L360,300 Z" fill="#5C4632"/><rect x="90" y="300" width="220" height="140" fill="#EFE4C4"/><g stroke="#8F7B4E" stroke-width="3"><line x1="90" y1="330" x2="310" y2="330"/><line x1="90" y1="365" x2="310" y2="365"/><line x1="90" y1="400" x2="310" y2="400"/></g><rect x="170" y="360" width="60" height="80" fill="#3B2E20"/></svg></div>
+        <div class="house-body">
+          <div><h3>Wuni House</h3><span class="house-tag">Bamboo · sleeps 2</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#CFCBB0"/><rect y="320" width="400" height="180" fill="#8E9A78"/><path d="M60,320 C60,220 340,220 340,320 Z" fill="#5A4632"/><rect x="110" y="320" width="180" height="120" fill="#EDE7D2"/><circle cx="200" cy="380" r="30" fill="#3B2E20"/></svg></div>
+        <div class="house-body">
+          <div><h3>Suren House</h3><span class="house-tag">Stone &amp; teak · sleeps 2</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#E3D8B8"/><rect y="290" width="400" height="210" fill="#A4A582"/><rect x="60" y="190" width="280" height="110" fill="#4E3B29"/><rect x="90" y="300" width="220" height="130" fill="#F1E9CE"/><g fill="#8F7B4E"><rect x="120" y="330" width="50" height="70"/><rect x="230" y="330" width="50" height="70"/></g></svg></div>
+        <div class="house-body">
+          <div><h3>Kaliandra House</h3><span class="house-tag">Two-storey bamboo · sleeps 4</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#D7CCA6"/><rect y="340" width="400" height="160" fill="#94A17A"/><ellipse cx="200" cy="300" rx="160" ry="70" fill="#4A3B2A"/><rect x="120" y="330" width="160" height="110" fill="#EEE6CA"/><line x1="200" y1="330" x2="200" y2="440" stroke="#8F7B4E" stroke-width="3"/></svg></div>
+        <div class="house-body">
+          <div><h3>Puspa Nest</h3><span class="house-tag">Treetop room · sleeps 2</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#E7DEC0"/><rect y="360" width="400" height="140" fill="#B3A67D"/><path d="M50,360 L200,240 L350,360 Z" fill="#5C4632"/><rect x="100" y="360" width="200" height="100" fill="#F3ECD2"/><circle cx="200" cy="290" r="18" fill="#B5613A" opacity="0.85"/></svg></div>
+        <div class="house-body">
+          <div><h3>Merapi View Suite</h3><span class="house-tag">Volcanic stone · sleeps 3</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+      <article class="house-card reveal">
+        <div class="house-scene"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="500" fill="#D9CFA9"/><rect y="330" width="400" height="170" fill="#98A379"/><path d="M40,330 C120,250 280,250 360,330 Z" fill="#4E3B29"/><rect x="90" y="330" width="220" height="120" fill="#F0E9CE"/><rect x="150" y="360" width="100" height="90" fill="#3B2E20"/></svg></div>
+        <div class="house-body">
+          <div><h3>Wringin Cottage</h3><span class="house-tag">Reclaimed teak · sleeps 2</span></div>
+          <span class="house-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 18L18 6M18 6H9M18 6V15"/></svg></span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="stay-note reveal">
+      <p>We keep walls to a minimum — most bathrooms are open to the sky, cooled by cross-ventilation rather than air conditioning. Every bed comes dressed in linen and draped in mosquito netting, with a hand-hammered copper basin in the bathroom and a rain shower fed by the spring. What we can't grow ourselves — coffee, honey, woven textiles — we buy from the village a ten-minute walk down the ridge.</p>
+      <p><strong>A note on getting around:</strong> Wuni, Suren, and Kaliandra sit close to the gate on level ground. Puspa Nest, Merapi View Suite, and Wringin Cottage sit further down the ravine and involve stone steps and a short bamboo bridge — worth asking about if stairs are a concern.</p>
+    </div>
+
+    <div class="stay-footer reveal">
+      <p>Rates include use of the spring pool, kitchen garden, and morning coffee walk. Breakfast is cooked over open fire, à la minute.</p>
+      <a href="#booking" class="btn btn-clay">Check availability</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= NATURE / PHILOSOPHY ============================= -->
+<section class="nature" id="nature">
+  <div class="wrap">
+    <div class="nature-copy">
+      <div class="section-head reveal" style="margin-bottom:0;">
+        <div>
+          <p class="eyebrow">Living with Merapi</p>
+          <h2>Built to keep, not to impress</h2>
+        </div>
+      </div>
+      <p class="reveal">Merapi is one of the most active volcanoes in the world, and everything at Van Resink is built with that respect: light bamboo and timber frames, deep eaves, and foundations that can be repaired by hand, not machine.</p>
+      <p class="reveal">We heat water with wood, grow what we can on the slope's poor volcanic soil anyway, and let the forest do most of the landscaping. What's left is a place that feels less designed than discovered.</p>
+    </div>
+    <div class="principle-grid reveal">
+      <div class="principle">
+        <svg viewBox="0 0 24 24"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+        <h4>Cool mountain air</h4>
+        <p>No air conditioning needed above 800m — every house is cross-ventilated by design.</p>
+      </div>
+      <div class="principle">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8 8 5 11 5 15a7 7 0 0014 0c0-4-3-7-7-13z"/></svg>
+        <h4>Spring-fed water</h4>
+        <p>Drawn from the same channel that has watered this ridge for generations.</p>
+      </div>
+      <div class="principle">
+        <svg viewBox="0 0 24 24"><path d="M12 3v18M6 8c0 4 3 6 6 6s6-2 6-6M4 15c0 3 3.5 5 8 5s8-2 8-5"/></svg>
+        <h4>Bamboo &amp; reclaimed teak</h4>
+        <p>Grown or salvaged within 20km, worked by three local carpentry families.</p>
+      </div>
+      <div class="principle">
+        <svg viewBox="0 0 24 24"><path d="M4 20l4-9 4 5 3-4 5 8H4z"/></svg>
+        <h4>No chemical treatment</h4>
+        <p>Gardens and grounds kept the way the volcano keeps them — with compost and patience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EVENTS & RETREATS ============================= -->
+<section class="events" id="events">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Events &amp; Retreats</p>
+        <h2>Small enough for a wedding, quiet enough for a retreat</h2>
+      </div>
+      <p class="section-note">With six houses total, we only ever host one gathering at a time.</p>
+    </div>
+
+    <div class="event-grid">
+      <article class="event-card reveal">
+        <div class="event-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="14" r="5"/><circle cx="16" cy="14" r="5"/></svg></div>
+        <h3>Weddings &amp; Elopements</h3>
+        <p>A riverside blessing at the spring pool, a bonfire feast in the clearing, or a small elopement under the pines — with all six houses reserved for your guests.</p>
+      </article>
+      <article class="event-card reveal">
+        <div class="event-icon"><svg viewBox="0 0 24 24"><path d="M12 2v6M8 5l4 3 4-3M4 21c0-5 3.5-8 8-8s8 3 8 8"/></svg></div>
+        <h3>Private Retreats</h3>
+        <p>Yoga groups, corporate offsites, and family reunions take over the whole property, with the yoga pavilion and long-table dinners built around your schedule.</p>
+      </article>
+      <article class="event-card reveal">
+        <div class="event-icon"><svg viewBox="0 0 24 24"><path d="M4 20l4-9 4 5 3-4 5 8H4z"/></svg></div>
+        <h3>Featured Spaces</h3>
+        <p>The spring pool clearing holds up to 40 seated guests; the yoga pavilion up to 25. Both come with kitchen access and string lighting after dark.</p>
+      </article>
+    </div>
+
+    <div class="stay-footer reveal">
+      <p>Tell us the occasion and the headcount, and we'll help you plan the rest — from the menu to the flowers.</p>
+      <a href="mailto:stay@vanresink.com?subject=Event%20Inquiry" class="btn btn-clay">Enquire about your event</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ABOUT US ============================= -->
+<section class="about" id="about">
+  <div class="wrap about-wrap">
+    <div class="about-copy">
+      <p class="eyebrow">About Us</p>
+      <h2>An accidental villa</h2>
+      <p>We didn't set out to run a hotel. In the early 2000s, our family restored a single teak house on this ridge as a weekend escape from Yogyakarta — a place to leave the heat behind. Friends asked to stay. Then friends of friends. Eventually we restored a second house, then built a third from bamboo, and the weekend escape became Van Resink.</p>
+      <p>We still live down the road, which is part of why so little here has changed hands to contractors or design firms — every house has been built, fixed, and re-thatched by the same three families for almost two decades. We know the mountain because we never really left it.</p>
+    </div>
+    <blockquote class="about-quote reveal">
+      We didn't design a hotel and land it on the mountain. We just kept building the same house we already loved, six times.
+      <footer>— The Van Resink family</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============================= WHAT'S ON ============================= -->
+<section class="whats-on" id="whats-on">
+  <div class="wrap" style="margin-bottom:3rem;">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <div>
+        <p class="eyebrow">What's On</p>
+        <h2>A few ways to spend the day</h2>
+      </div>
+      <p class="section-note">Nothing is scheduled for you. Everything below can be arranged the evening before.</p>
+    </div>
+  </div>
+
+  <div class="on-scroller reveal">
+    <article class="on-card">
+      <div class="on-scene"><svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="320" fill="#E4D3A6"/><path d="M0,220 L200,60 L400,220 Z" fill="#7C6B49"/><circle cx="330" cy="60" r="22" fill="#EFC98B"/><rect y="220" width="400" height="100" fill="#3F4B2E"/></svg></div>
+      <div class="on-body"><p class="eyebrow">05:15</p><h3>Sunrise trek to Kali Kuning</h3><p>A guided 90-minute walk to the ridge where the sun clears Merapi before the cloud does.</p></div>
+    </article>
+    <article class="on-card">
+      <div class="on-scene"><svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="320" fill="#DCE0C6"/><rect y="200" width="400" height="120" fill="#8EA0B0"/><rect x="60" y="150" width="280" height="60" fill="#5C4632"/><circle cx="120" cy="180" r="10" fill="#EFE7D2"/><circle cx="200" cy="180" r="10" fill="#EFE7D2"/><circle cx="280" cy="180" r="10" fill="#EFE7D2"/></svg></div>
+      <div class="on-body"><p class="eyebrow">18:30</p><h3>Riverside long-table dinner</h3><p>Set beside the spring channel, cooked over open fire from what the garden gave up that week.</p></div>
+    </article>
+    <article class="on-card">
+      <div class="on-scene"><svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="320" fill="#E8DFC2"/><circle cx="200" cy="170" r="80" fill="#B5613A" opacity="0.18"/><path d="M120,220 Q200,140 280,220" stroke="#5C4632" stroke-width="8" fill="none"/></svg></div>
+      <div class="on-body"><p class="eyebrow">10:00</p><h3>Javanese herbal steam &amp; massage</h3><p>Traditional lulur and steam bath using leaves gathered that morning from the slope.</p></div>
+    </article>
+    <article class="on-card">
+      <div class="on-scene"><svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="320" fill="#DED3AE"/><rect x="150" y="140" width="100" height="140" fill="#3B2E20"/><ellipse cx="200" cy="140" rx="60" ry="14" fill="#5C4632"/></svg></div>
+      <div class="on-body"><p class="eyebrow">07:00</p><h3>Farm-to-cup coffee ritual</h3><p>Pick, pulp, and roast beans from the slope's own arabica trees with our farmer, Pak Slamet.</p></div>
+    </article>
+    <article class="on-card">
+      <div class="on-scene"><svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="320" fill="#E2D6AE"/><rect y="180" width="400" height="140" fill="#93A177"/><rect x="80" y="140" width="240" height="60" fill="#8F7B4E" opacity="0.5"/></svg></div>
+      <div class="on-body"><p class="eyebrow">Day pass</p><h3>Garden &amp; spring pool access</h3><p>Not staying the night? Spend a day in the forest with lunch and pool access included.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================= TRANSPORTATION ============================= -->
+<section class="transport" id="transport">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Getting Here</p>
+        <h2>An hour from Yogyakarta, a world away from it</h2>
+      </div>
+      <p class="section-note">We're about 45–60 minutes from Adisutjipto Airport and Yogyakarta International Airport (YIA).</p>
+    </div>
+    <div class="transport-grid">
+      <article class="transport-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M3 13l3-8h12l3 8M5 13h14v6H5v-6zM7 19v2M17 19v2"/></svg></div>
+        <h4>Airport Shuttle</h4>
+        <p>We arrange pick-up from either Yogyakarta airport, timed to your flight so nobody waits at arrivals.</p>
+      </article>
+      <article class="transport-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><path d="M3 12l2-6h14l2 6M4 12h16v5H4v-5zM7 17v2M17 17v2"/></svg></div>
+        <h4>Private Car &amp; Driver</h4>
+        <p>A driver for the length of your stay, for day trips into Yogyakarta or up toward the Merapi lava tour trailheads.</p>
+      </article>
+      <article class="transport-card reveal">
+        <div class="explore-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17h6l3-7h3M9 10H6"/></svg></div>
+        <h4>Scooters</h4>
+        <p>A handful of batik-painted scooters are available on-site for confident riders exploring Kaliurang on their own.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= BOOKING CTA ============================= -->
+<section class="booking" id="booking">
+  <div class="wrap">
+    <p class="eyebrow">Reserve</p>
+    <h2>Come find the path before someone paves it</h2>
+    <p class="lede">Six houses, one at a time. Write to us directly and we'll help you plan the visit, from Yogyakarta pickup to the dinner menu.</p>
+    <div class="btn-row">
+      <a href="https://wa.me/6281234567890" class="btn btn-light">Message on WhatsApp</a>
+      <a href="mailto:stay@vanresink.com" class="btn btn-light">stay@vanresink.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= NEWSLETTER STRIP ============================= -->
+<section class="newsletter">
+  <div class="wrap newsletter-wrap reveal">
+    <div>
+      <p class="eyebrow">Friends &amp; Family</p>
+      <h3>Join the list, take 10% off your next stay</h3>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+      <button type="submit" class="btn btn-clay">Subscribe</button>
+    </form>
+    <p class="newsletter-note" id="newsletterNote" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand">Van Resink<span>Kaliurang · Merapi</span></a>
+        <p>A six-house retreat on the southern slope of Mount Merapi, an hour from Yogyakarta.</p>
+        <div class="social-row" aria-label="Social media">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M15 3v10.5a3.5 3.5 0 11-3-3.46V7a7 7 0 007 6.5V10a3.5 3.5 0 01-3.5-3.5V3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="var(--moss-deep)" stroke="none"/></svg></a>
+          <a href="https://wa.me/6281234567890" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <p><a href="#explore">Explore</a></p>
+        <p><a href="#stay">Stay</a></p>
+        <p><a href="#nature">Living with Merapi</a></p>
+        <p><a href="#events">Events &amp; Retreats</a></p>
+      </div>
+      <div>
+        <h5>Property</h5>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#whats-on">What's On</a></p>
+        <p><a href="#transport">Getting Here</a></p>
+        <p><a href="#booking">Reserve</a></p>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <p><a href="https://wa.me/6281234567890">WhatsApp</a></p>
+        <p><a href="mailto:stay@vanresink.com">Email</a></p>
+        <p>Kaliurang Barat, Sleman</p>
+        <p>Yogyakarta, Indonesia</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Villa Van Resink</span>
+      <span>Kaliurang, Sleman — Daerah Istimewa Yogyakarta</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================= WHATSAPP FLOATING BUTTON ============================= -->
+<a class="wa-float" href="https://wa.me/6281234567890?text=Hi%20Van%20Resink%2C%20I%27d%20like%20to%20ask%20about%20a%20stay" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
