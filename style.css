@@ -100,6 +100,11 @@ button{ font:inherit; background:none; border:none; cursor:pointer; color:inheri
   padding: 1rem 6vw;
   box-shadow: 0 1px 0 rgba(42,36,30,0.08);
 }
+.menu-open .site-header{
+  background: transparent !important;
+  backdrop-filter: none;
+  box-shadow: none;
+}
 
 .brand{
   font-family: var(--display);
@@ -167,7 +172,7 @@ button{ font:inherit; background:none; border:none; cursor:pointer; color:inheri
   justify-content: center;
   padding: 7vh 8vw;
   overflow-y: auto;
-  clip-path: circle(2% at var(--menu-ox, calc(100% - 4.2rem)) var(--menu-oy, 2.6rem));
+  clip-path: circle(0% at var(--menu-ox, calc(100% - 4.2rem)) var(--menu-oy, 2.6rem));
   transition: clip-path 0.65s cubic-bezier(.65,0,.35,1);
   pointer-events: none;
 }
